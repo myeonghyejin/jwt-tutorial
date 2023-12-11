@@ -6,13 +6,13 @@ import lombok.*;
 import java.util.Set;
 
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 @Getter
 @Setter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
+public class Users {
 
     @Id
     @Column(name = "user_id")
@@ -33,7 +33,7 @@ public class User {
 
     @ManyToMany
     @JoinTable(
-            name = "user_authority",
+            name = "users_authority",
             joinColumns = {@JoinColumn(name = "user_id", referencedColumnName = "user_id")},
             inverseJoinColumns = {@JoinColumn(name = "authority_name", referencedColumnName = "authority_name")}
     )
