@@ -1,4 +1,4 @@
-package com.example.tutorial.config;
+package com.example.tutorial.jwt;
 
 import com.example.tutorial.jwt.JwtFilter;
 import com.example.tutorial.jwt.TokenProvider;
